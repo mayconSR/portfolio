@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#root {
+  max-width: 1920px;
+  text-align: center;
+}
+body{
+  background-color: var(--background);
+  color: var(--text);
+}
+h1{
+  font-size: 1.7rem;
+  margin: 0;
+}
+h2{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* home */
+
+.banner{
+  width: 100vw;
+  height: 25vh;
+  background-color: var(--contrast);
+  position: relative;
+}
+.banner img{
+  border-radius: 50%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#home{
+  width: 100vw;
+  height: 75vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#home .container{
+  margin: 35% 0;
+}
+/* sobre */
+#sobre{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--contrast);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sobre .container{
+  width: 80%; 
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#sobre .container h2{
+  color: var(--highlight);
+}
+#sobre .container p{
+  color: var(--background);
+}
+
+/* Projetos */
+#projetos{
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* Contato */
+#contato{
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--contrast);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+#contato h2{
+  color: var(--highlight);
+  font-weight: bold;
+}
+/* formulario */
+
+form {
+  background-color: var(--background);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form p{
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 80%;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid var(--background);
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--contrast);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: var(--contrast);
+  color: var(--background);
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 40%;
+}
+
+button:hover {
+  background-color: var(--contrast);
+}
+
+@media (max-width: 450px) {
+  form {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    form {
+      width: 60%;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* home */
+  .banner{
+    width: 30vw;
+    height: 100vh;
+    background-color: var(--contrast);
+    position: relative;
+  }
+  .banner img{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translateY(-50%);
+    border: 10px solid var(--contrast);
+  }
+  #home{
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #home .container{
+    margin: 0;
+  }
+
+  /* formulario */
+  form {
+    width: 50%;
+  }
+
+}
+
+/* Estilos para desktops grandes */
+@media (min-width: 1280px) {
+    /* home */
+  .banner{
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--contrast);
+    position: relative;
+    float: left;
+    margin: 0;
+  }
+  .banner img{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translateY(-50%);
+    border: 10px solid var(--contrast);
+    
+  }
+  #home{
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+  }
+  #home .container{
+    margin: 0;
+  }
+
+  /* formulario */
+  form {
+    width: 30%;
+  }
+}

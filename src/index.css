@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+:root {
+  /*-font-*/
+  font-family:'DM Sans', sans-serif;;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /*-colors-*/
+  --background: #E8E8E8;
+  --contrast: #754bac;
+  --highlight: #FFE88B;
+  --text: #4D4D4D;
+  --alternative: #AA8ED6;
+  --green:#28A745;
+  --red:#DC3545;
+
+  /*-antialiased-*/
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
